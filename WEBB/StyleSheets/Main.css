@@ -1,0 +1,146 @@
+﻿﻿ /* Main styles */
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.section-home {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../Media/Backgrounds/joshuaaragon.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.section-home::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to top, black, transparent);
+    z-index: 999;
+}
+
+.section-about {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background: black;
+    background-position: center;
+    background-size: cover;
+}
+
+/* nav styles */
+
+.nav-wrapper {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.nav-list-wrapper {
+    flex: 1;
+    text-align: right;
+    z-index: 3;
+}
+
+    .nav-list-wrapper ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+    }
+
+        .nav-list-wrapper ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .nav-list-wrapper ul li::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: white;
+            display: block;
+            margin: auto;
+            cursor: pointer;
+            transition: 0.5s ease;
+        }
+
+        .nav-list-wrapper ul li:hover::after {
+            width: 100%;
+            transition: 0.5s ease;
+        }
+
+.nav-logo-wrapper {
+    margin: auto;
+    text-align: right;
+    z-index: 3;
+}
+
+.nav-logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 8px 12px;
+    position: relative;
+    transition: 0.5s ease;
+}
+
+    .nav-logo a:hover {
+        font-size: 2em;
+        transition: 0.5s ease;
+    }
+
+/* Home Styles */
+
+.div-center-content {
+    width: 90%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.div-center-content h1 {
+    color: white;
+    font-size: 3em;
+}
+
+.div-center-content p {
+    color: white;
+    font-size: 1.5em;
+}
+
+.div-cc-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    margin: 10px 0;
+    font-size: 13px;
+    background: linear-gradient(rgba(5,10,31,0.7), rgba(5,10,31,0.7));
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.div-cc-btn:hover {
+    border: 1px solid black;
+    background: darkmagenta;
+    color: white;
+    transition: 1s ease;
+}
