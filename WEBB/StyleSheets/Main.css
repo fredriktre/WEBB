@@ -117,12 +117,14 @@ html, body {
 .div-center-content h1 {
     color: white;
     font-size: 3em;
+    text-shadow: 2px 2px grey;
 }
 
-.div-center-content p {
-    color: white;
-    font-size: 1.5em;
-}
+    .div-center-content p {
+        color: white;
+        font-size: 1.5em;
+        text-shadow: 2px 2px grey;
+    }
 
 .div-cc-btn {
     display: inline-block;
@@ -144,3 +146,59 @@ html, body {
     color: white;
     transition: 1s ease;
 }
+
+/* about styles */
+.div-about-container {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.swiper-container {
+    width: 50%;
+    transform: translateY(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper{
+    width: 100%;
+    height: fit-content;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    width: auto;
+    height: 50vh;
+}
+
+.div-aboutme {
+}
+
+.div-aboutme h1 {
+    color: white;
+    font-size: 2em;
+}
+
+    .div-aboutme p {
+        color: white;
+        font-size: 1em;
+    }
+
+        .div-aboutme p a {
+            color: lightgrey;
+            text-decoration: none;
+            font-size: 1em;
+            transition: 1s ease;
+        }
+
+    .div-aboutme p a:hover {
+        font-size: 1.5em;
+        transition: 1s ease;
+    }

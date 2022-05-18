@@ -5,12 +5,14 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>FST-MySite</title>
     <link rel="stylesheet" type="text/css" href="StyleSheets/Main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <section class="section-home">
@@ -43,23 +45,51 @@
     </section>
 
     <section class="section-about" id="about">
-        <div class="div-about-media-group">
-            <div class="div-amg-element">
-                <img 
-                     src="Pictures/Facepic.jpg"
-                     alt="Selfie" />
+
+        <div class="div-about-container">
+            <!-- borrowed code from https://swiperjs.com/get-started -->
+            <div class="swiper-container">
+                <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide"><img src="Media/Pictures/Facepic.jpg" alt="Me" /></div>                    
+                          <div class="swiper-slide"><img src="Media/Pictures/MeOnBike.jpg" alt="Me on Honda CBR 125cc" /></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                </div>    
             </div>
-            <div class="div-amg-element">
-                <img 
-                     src="Pictures/Facepic.jpg"
-                     alt="" />
-            </div>
-            <div class="div-amg-element">
-                <img 
-                     src="Pictures/Facepic.jpg"
-                     alt="" />
+
+            <div class="div-aboutme">
+                <h1>About me</h1>
+                <p>I am a 18 year old boy from <a href="/">Sarpsborg Norway</a><br />
+                    I finished my first year of highschool at Halden vgs. <br />
+                    and my second at Glemmen vgs.
+                </p>
             </div>
         </div>
+
     </section>    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            // Optional parameters
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+        });
+        
+    </script>
+
 </body>
 </html>

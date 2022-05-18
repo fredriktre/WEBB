@@ -70,6 +70,7 @@
     <Content Include="Index.aspx" />
     <Content Include="Media\Backgrounds\joshuaaragon.jpg" />
     <Content Include="Media\Pictures\Facepic.jpg" />
+    <Content Include="Media\Pictures\MeOnBike.jpg" />
     <Content Include="StyleSheets\Main.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -91,6 +92,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
