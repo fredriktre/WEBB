@@ -40,7 +40,7 @@
         <div class="div-center-content">
             <h1>Welcome to MySite</h1>
             <p>My portfolio web-site</p>
-            <a href="#portfolio" class="div-cc-btn">to portfolio</a>
+            <a href="#portfolio" class="div-cc-btn">To portfolio</a>
         </div>
     </section>
 
@@ -65,12 +65,23 @@
                 <h1>About me</h1>
                 <p>I am a 18 year old boy from <a href="/">Sarpsborg Norway</a><br />
                     I finished my first year of highschool at Halden vgs. <br />
-                    and my second at Glemmen vgs.
+                    and my second at Glemmen vgs. Both within IT. <br />
+                    <br />
+                    My main interest is Web-Development. Though <br />
+                    I do also have an interest for database-design <br />
+                    <br />
+                    The 2 languages I am best at are HTML and CSS. <br />
+                    I am currently learning more about them, <br />
+                    javascript and c#,
                 </p>
             </div>
         </div>
 
-    </section>    
+    </section>
+
+    <section class="section-portfolio">
+
+    </section>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {

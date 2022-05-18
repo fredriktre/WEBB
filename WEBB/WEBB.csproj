@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Index.aspx" />
     <Content Include="Media\Backgrounds\joshuaaragon.jpg" />
+    <Content Include="Media\Backgrounds\pavorHexagon.jpg" />
     <Content Include="Media\Pictures\Facepic.jpg" />
     <Content Include="Media\Pictures\MeOnBike.jpg" />
     <Content Include="StyleSheets\Main.css" />
