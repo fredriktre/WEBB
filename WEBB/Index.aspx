@@ -79,7 +79,7 @@
 
     </section>
 
-    <section class="section-portfolio">
+    <section class="section-portfolio" id="portfolio">
 
     </section>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

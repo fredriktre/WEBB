@@ -4,12 +4,12 @@
 * {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
 }
 
 html, body {
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .section-home {
@@ -26,9 +26,9 @@ html, body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 40%;
+    height: 28%;
     background: linear-gradient(to top, black, transparent);
-    z-index: 999;
+    z-index: 500;
 }
 
 .section-about {
@@ -45,7 +45,7 @@ html, body {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 40%;
+    height: 28%;
     background: linear-gradient(to top, transparent, black);
     z-index: 999;
 }
@@ -153,11 +153,11 @@ html, body {
     border: 1px solid white;
     padding: 12px 34px;
     margin: 10px 0;
-    font-size: 13px;
+    font-size: 1em;
     background: linear-gradient(rgba(5,10,31,0.7), rgba(5,10,31,0.7));
     position: relative;
     cursor: pointer;
-    transition: 1s;
+    transition: 1s ease;
 }
 
 .div-cc-btn:hover {
@@ -168,10 +168,12 @@ html, body {
 }
 
 /* about styles */
+
 .div-about-container {
     display: flex;
-    transform: translateX(14%);
+    transform: translate(13%, 30%);
     width: 80%;
+    height: 80%;
     justify-content: space-between;
     align-items: center;
 }
@@ -229,3 +231,6 @@ html, body {
         font-size: 1.5em;
         transition: 1s ease;
     }
+
+/* Portfolio Styles */
+
